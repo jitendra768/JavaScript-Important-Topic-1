@@ -73,6 +73,8 @@
 
 // console.log('other application work!')
 
+//using callback
+
 // function register(callback) {
 //   setTimeout(() => {
 //     console.log('Register End');
