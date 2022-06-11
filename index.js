@@ -1,9 +1,9 @@
 // Import stylesheets
 import './style.css';
-import './JavaScript/callbackAkshay';
-import './JavaScript/promiseAsyncAwait';
-import './JavaScript/const';
-import './JavaScript/important';
+// import './JavaScript/callbackAkshay';
+// import './JavaScript/promiseAsyncAwait';
+// import './JavaScript/const';
+// import './JavaScript/important';
 import './JavaScript/currying';
 
 // Write Javascript code!
