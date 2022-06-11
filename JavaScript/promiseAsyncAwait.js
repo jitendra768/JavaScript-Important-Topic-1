@@ -125,8 +125,10 @@
 function register(callback) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
+      reject('Error While Registering');
       console.log('Register End');
-      resolve();
+      // resolve();
+      
     }, 3000);
   });
 }
