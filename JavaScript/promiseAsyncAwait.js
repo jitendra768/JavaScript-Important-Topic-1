@@ -122,12 +122,80 @@
 
 // Solve this problem using promises
 
-function register(callback) {
+// function register() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       return reject('Error While Registering');
+//       console.log('Register End');
+//       // resolve();
+      
+//     }, 3000);
+//   });
+// }
+
+// function sendEmail() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log('Send Email');
+//       resolve();
+//     }, 1000);
+//   });
+// }
+
+// function login() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log('Login end');
+//       resolve();
+//     }, 4000);
+//   });
+// }
+
+// function getUserData() {
+//   return new Promise((resolve, reject)=>{
+//     setTimeout(() => {
+//       console.log('Get User Data');
+//       resolve();
+//     }, 4000);
+//   })
+ 
+// }
+
+// function displayData() {
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//       console.log('User data display');
+//       resolve();
+//     }, 5000);
+//   })
+ 
+// }
+
+// this is callbackHell
+// register(() => {
+//   sendEmail(() => {
+//     login(() => {
+//       getUserData(() => {
+//         displayData();
+//       });
+//     });
+//   });
+// });
+
+// register().then(sendEmail).then(login).then(getUserData).then(displayData).catch((err)=>{
+//   console.log('Error While Registering')
+// });
+
+// console.log('other application work!');
+
+
+// Async await using 
+
+function register() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      reject('Error While Registering');
       console.log('Register End');
-      // resolve();
+      resolve();
       
     }, 3000);
   });
@@ -171,17 +239,15 @@ function displayData() {
  
 }
 
-// this is callbackHell
-// register(() => {
-//   sendEmail(() => {
-//     login(() => {
-//       getUserData(() => {
-//         displayData();
-//       });
-//     });
-//   });
-// });
+async function authenticate(){
+  await register();
+  await sendEmail();
+  await login();
+  await getUserData();
+  await displayData();
+}
 
-register().then(sendEmail).then(login).then(getUserData).then(displayData);
+authenticate();
+
 
 console.log('other application work!');
