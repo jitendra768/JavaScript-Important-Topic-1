@@ -193,65 +193,86 @@
 
 // Async await using 
 
-function register() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log('Register End');
-      resolve();
+// function register() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log('Register End');
+//       resolve();
       
-    }, 3000);
-  });
-}
+//     }, 3000);
+//   });
+// }
 
-function sendEmail() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log('Send Email');
-      resolve();
-    }, 1000);
-  });
-}
+// function sendEmail() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log('Send Email');
+//       resolve();
+//     }, 1000);
+//   });
+// }
 
-function login() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log('Login end');
-      resolve();
-    }, 4000);
-  });
-}
+// function login() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log('Login end');
+//       resolve();
+//     }, 4000);
+//   });
+// }
 
-function getUserData() {
-  return new Promise((resolve, reject)=>{
-    setTimeout(() => {
-      console.log('Get User Data');
-      resolve();
-    }, 4000);
-  })
+// function getUserData() {
+//   return new Promise((resolve, reject)=>{
+//     setTimeout(() => {
+//       console.log('Get User Data');
+//       resolve();
+//     }, 4000);
+//   })
  
-}
+// }
 
-function displayData() {
-  return new Promise((resolve,reject)=>{
-    setTimeout(() => {
-      console.log('User data display');
-      resolve();
-    }, 5000);
-  })
+// function displayData() {
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(() => {
+//       console.log('User data display');
+//       resolve();
+//     }, 5000);
+//   })
  
-}
+// }
 
-async function authenticate(){
-  await register();
-  await sendEmail();
-  await login();
-  await getUserData();
-  await displayData();
-}
+// async function authenticate(){
+//   await register();
+//   await sendEmail();
+//   await login();
+//   await getUserData();
+//   await displayData();
+// }
 
-authenticate().then(()=>{
-  console.log('All Proccess Is completed')
-});
+// authenticate().then(()=>{
+//   console.log('All Proccess Is completed')
+// });
 
 
-console.log('other application work!');
+// console.log('other application work!');
+
+
+
+
+// Callback, async await promises by Technical SUneja 
+
+const data = [
+  {Name:'Amit', Profession:'Softaware Engineer'},
+  {Name:'Shubham', Profession:'Softaware Engineer'},
+];
+
+function getData(){
+  setTimeout(()=>{
+    let output = '';
+    data.forEach((datas,index)=>{
+      output += `<li>${datas.Name}</li>`
+    });
+    document.body.innerHTML = output;
+  },1000)
+};
+getData();
