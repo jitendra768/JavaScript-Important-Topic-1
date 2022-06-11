@@ -247,7 +247,9 @@ async function authenticate(){
   await displayData();
 }
 
-authenticate();
+authenticate().then(()=>{
+  console.log('All Proccess Is completed')
+});
 
 
 console.log('other application work!');
