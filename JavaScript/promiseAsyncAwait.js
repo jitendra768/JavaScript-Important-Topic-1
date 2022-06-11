@@ -73,48 +73,113 @@
 
 // console.log('other application work!')
 
+// function register(callback) {
+//   setTimeout(() => {
+//     console.log('Register End');
+//     callback();
+//   }, 1000);
+// }
+
+// function sendEmail(callback) {
+//   setTimeout(() => {
+//     console.log('Send Email');
+//     callback();
+//   }, 2000);
+// }
+
+// function login(callback) {
+//   setTimeout(() => {
+//     console.log('Login end');
+//     callback();
+//   }, 3000);
+// }
+
+// function getUserData(callback) {
+//   setTimeout(() => {
+//     console.log('Get User Data');
+//     callback();
+//   }, 4000);
+// }
+
+// function displayData() {
+//   setTimeout(() => {
+//     console.log('User data display');
+//   }, 5000);
+// }
+
+// // this is callbackHell
+// register(() => {
+//   sendEmail(() => {
+//     login(() => {
+//       getUserData(() => {
+//         displayData();
+//       });
+//     });
+//   });
+// });
+
+// console.log('other application work!');
+
+// Solve this problem using promises
+
 function register(callback) {
-  setTimeout(() => {
-    console.log('Register End');
-    callback();
-  }, 1000);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('Register End');
+      resolve();
+    }, 3000);
+  });
 }
 
-function sendEmail(callback) {
-  setTimeout(() => {
-    console.log('Send Email');
-    callback();
-  }, 2000);
+function sendEmail() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('Send Email');
+      resolve();
+    }, 1000);
+  });
 }
 
-function login(callback) {
-  setTimeout(() => {
-    console.log('Login end');
-    callback();
-  }, 3000);
+function login() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('Login end');
+      resolve();
+    }, 4000);
+  });
 }
 
-function getUserData(callback) {
-  setTimeout(() => {
-    console.log('Get User Data');
-    callback();
-  }, 4000);
+function getUserData() {
+  return new Promise((resolve, reject)=>{
+    setTimeout(() => {
+      console.log('Get User Data');
+      resolve();
+    }, 4000);
+  })
+ 
 }
 
 function displayData() {
-  setTimeout(() => {
-    console.log('User data display');
-  }, 5000);
+  return new Promise((resolve,reject)=>{
+    setTimeout(() => {
+      console.log('User data display');
+      resolve();
+    }, 5000);
+  })
+ 
 }
 
-register(() => {
-  sendEmail(() => {
-    login(() => {
-      getUserData(() => {
-        displayData();
-      });
-    });
-  });
-});
+// this is callbackHell
+// register(() => {
+//   sendEmail(() => {
+//     login(() => {
+//       getUserData(() => {
+//         displayData();
+//       });
+//     });
+//   });
+// });
+
+register().then(sendEmail).then(login).then(getUserData).then(displayData);
 
 console.log('other application work!');
