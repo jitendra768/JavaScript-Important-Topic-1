@@ -261,19 +261,19 @@
 
 // Callback, async await promises by Technical SUneja 
 
-const data = [
-  {Name:'Amit', Profession:'Softaware Engineer'},
-  {Name:'Shubham', Profession:'Softaware Engineer'},
-];
+// const data = [
+//   {Name:'Amit', Profession:'Softaware Engineer'},
+//   {Name:'Shubham', Profession:'Softaware Engineer'},
+// ];
 
-function getData(){
-  setTimeout(()=>{
-    let output = '';
-    data.forEach((datas,index)=>{
-      output += `<li>${datas.Name}</li>`
-    });
-    document.body.innerHTML = output;
-    console.log(output);
-  },1000)
-};
-getData();
+// function getData(){
+//   setTimeout(()=>{
+//     let output = '';
+//     data.forEach((datas,index)=>{
+//       output += `<li>${datas.Name}</li>`
+//     });
+//     document.body.innerHTML = output;
+//     console.log(output);
+//   },1000)
+// };
+// getData();
