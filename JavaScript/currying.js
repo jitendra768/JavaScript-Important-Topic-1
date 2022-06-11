@@ -24,3 +24,18 @@ function adddition(a){
 
 const sum = adddition(4)(5)(6);
 console.log(sum);
+
+
+// another Example 
+userObj = {
+  name:'Amit',
+  age:20
+}
+
+function userInfo(obj){
+  return function(userInfo){
+    return obj[userInfo];
+  }
+}
+const user = userInfo(userObj);
+console.log(user('name'));
