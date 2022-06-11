@@ -273,6 +273,7 @@ function getData(){
       output += `<li>${datas.Name}</li>`
     });
     document.body.innerHTML = output;
+    console.log(output);
   },1000)
 };
 getData();
