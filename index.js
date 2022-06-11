@@ -3,6 +3,7 @@ import './style.css';
 import './JavaScript/callbackAkshay';
 import './JavaScript/promiseAsyncAwait';
 import './JavaScript/const';
+import './JavaScript/important';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
