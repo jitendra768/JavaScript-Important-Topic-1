@@ -7,7 +7,8 @@ import './style.css';
 // import './JavaScript/currying';
 // import './JavaScript/rest&Spread';
 // import './JavaScript/hoisting';
-import './JavaScript/closure';
+// import './JavaScript/closure';
+import './JavaScript/mapFilterReduce';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
