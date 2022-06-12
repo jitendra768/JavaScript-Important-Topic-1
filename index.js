@@ -6,7 +6,8 @@ import './style.css';
 // import './JavaScript/important';
 // import './JavaScript/currying';
 // import './JavaScript/rest&Spread';
-import './JavaScript/hoisting';
+// import './JavaScript/hoisting';
+import './JavaScript/closure';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
