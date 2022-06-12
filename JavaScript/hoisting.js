@@ -13,3 +13,13 @@ var a = 5;
 function getName() {
   console.log('Namaste JavaScriipt');
 }
+
+// if replace var with let so a undefined and getName given a function
+
+getName();
+console.log(b);
+
+let b = 8;
+function getName() {
+  console.log('Namaste JavaScriipt');
+}
