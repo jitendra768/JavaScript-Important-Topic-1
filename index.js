@@ -8,7 +8,8 @@ import './style.css';
 // import './JavaScript/rest&Spread';
 // import './JavaScript/hoisting';
 // import './JavaScript/closure';
-import './JavaScript/mapFilterReduce';
+// import './JavaScript/mapFilterReduce';
+import './JavaScript/destructuring';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
