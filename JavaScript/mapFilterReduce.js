@@ -31,22 +31,63 @@ const res = numbers.map((x) => {
 
 // ------------Filter method-------------
 
-const number = [5,6,7,8,4];
+const number = [5, 6, 7, 8, 4];
 
-const result = number.filter((y)=>{
-  return y % 2 ===0;
+const result = number.filter((y) => {
+  return y % 2 === 0;
 });
 // console.log(result);
 
 // ---------Reduce Method-------------
 
-arr= [2,3,6,7];
+arr = [2, 3, 6, 7];
 
-function findsum(arr){
+function findsum(arr) {
   var sum = 0;
-  for( let i=0; i<arr.length; i++){
-      sum += arr[i];
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
   }
   return sum;
 }
-console.log(findsum(arr));
+// console.log(findsum(arr));
+
+// solve this example reduce method
+const findSum = arr.reduce((acc, curr) => {
+  return (acc = acc + curr);
+});
+// console.log(findSum);
+
+// ----------Lets More Example---------------
+
+const users = [
+  { firstName: 'Amit', LastName: 'Kumar', age: 26 },
+  { firstName: 'Shubham', LastName: 'Pasi', age: 52 },
+  { firstName: 'Alon', LastName: 'Musk', age: 50 },
+  { firstName: 'Sachin', LastName: 'Shahani', age: 26 },
+];
+
+// find All user FullName
+
+const FullName = users.map((index) => {
+  return `${index.firstName} ${index.LastName}`;
+}, 0);
+console.log(FullName);
+
+// --------filter---------------find less than 30 age
+
+const findAge = users.filter((x) => {
+  return x.age <= 30;
+});
+console.log(findAge);
+
+// ------Reduce-----------
+
+const output = users.reduce((acc, curr) => {
+  if (acc[curr.age]) {
+    acc[curr.age] = ++acc[curr.age];
+  } else {
+    acc[curr.age] = 1;
+  }
+  return acc;
+}, {});
+console.log(output);
