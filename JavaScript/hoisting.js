@@ -19,7 +19,7 @@ function getName() {
 getName();
 console.log(b);
 
-let b = 8;
+var b = 8;
 function getName() {
   console.log('Namaste JavaScriipt');
 }
