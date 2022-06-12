@@ -5,7 +5,8 @@ import './style.css';
 // import './JavaScript/const';
 // import './JavaScript/important';
 // import './JavaScript/currying';
-import './JavaScript/rest&Spread';
+// import './JavaScript/rest&Spread';
+import './JavaScript/hoisting';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
