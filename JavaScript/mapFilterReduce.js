@@ -27,7 +27,7 @@ const numbers = [7, 4, 5, 6];
 const res = numbers.map((x) => {
   return x * 2;
 });
-console.log(res);
+// console.log(res);
 
 // ------------Filter method-------------
 
@@ -36,4 +36,17 @@ const number = [5,6,7,8,4];
 const result = number.filter((y)=>{
   return y % 2 ===0;
 });
-console.log(result);
+// console.log(result);
+
+// ---------Reduce Method-------------
+
+arr= [2,3,6,7];
+
+function findsum(arr){
+  var sum = 0;
+  for( let i=0; i<arr.length; i++){
+      sum += arr[i];
+  }
+  return sum;
+}
+console.log(findsum(arr));
