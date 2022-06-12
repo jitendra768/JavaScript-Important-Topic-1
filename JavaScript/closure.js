@@ -13,7 +13,6 @@
 // var store = sum(2);
 // console.log(store(5));
 
-
 // ---------------------example2-----------------------------
 
 // const outerfun= (a)=>{
@@ -36,8 +35,6 @@
 // };
 // login();
 
-
-
 // ----------Akshay Saini -----------
 
 // function x(){
@@ -51,16 +48,14 @@
 
 // as a parameter pass function
 
-
 // function x(){
 //     var a = 7;
-    
+
 //     y();
 // }
 // x(function y(){
 //     console.log(a);
 // });
-
 
 // also return a function
 
@@ -69,25 +64,22 @@
 //   function y(){
 //       console.log(a);
 //   }
-  // a = 100;   //given for confusion a interviewer  it will be hundred
+// a = 100;   //given for confusion a interviewer  it will be hundred
 //   return y;
 // }
 // const z  = x();
 // console.log(z);
 // z();
 
-
-function z(){
-    var b = 20;
-    function x(){
-        var a = 3;
-        function y(){
-            console.log(a,b);
-        }
-        y();
+function z() {
+  var b = 20;
+  function x() {
+    var a = 3;
+    function y() {
+      console.log(b, a);
     }
-    x();
+    y();
+  }
+  x();
 }
 z();
-
-
