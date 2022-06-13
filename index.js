@@ -9,7 +9,8 @@ import './style.css';
 // import './JavaScript/hoisting';
 // import './JavaScript/closure';
 // import './JavaScript/mapFilterReduce';
-import './JavaScript/destructuring';
+// import './JavaScript/destructuring';
+import './JavaScript/function';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
