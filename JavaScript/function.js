@@ -68,5 +68,7 @@ b();
 
 // First function 
 const Geek= (a,b)=>{
-  console.log(a+''+b);
+  return(a+''+b);
 };
+
+console.log(Geek('Amit', 'saxena'));
