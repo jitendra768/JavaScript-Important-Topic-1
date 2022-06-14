@@ -10,7 +10,8 @@ import './style.css';
 // import './JavaScript/closure';
 // import './JavaScript/mapFilterReduce';
 // import './JavaScript/destructuring';
-import './JavaScript/function';
+// import './JavaScript/function';
+import './JavaScript/higherOrderFunction';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
