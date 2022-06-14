@@ -24,16 +24,49 @@ const square2 = square(4);
 
 // how to function work in js
 
-var x = 1;
-a();
-b();
-console.log(x);
+// var x = 1;
+// a();
+// b();
+// console.log(x);
 
-function a() {
-  var x = 10;
-  console.log(x);
+// function a() {
+//   var x = 10;
+//   console.log(x);
+// }
+// function b() {
+//   var x = 100;
+//   console.log(x);
+// };
+
+// function statement and function declaration
+
+function x() {
+  console.log('namaste  javascript');
 }
-function b() {
-  var x = 100;
-  console.log(x);
-}
+x();
+
+// function expression
+
+var b = function () {
+  console.log('b is called');
+};
+b();
+
+// anonymaous function 
+
+var greeting = function(greet){
+  console.log('namaste', greet);
+};
+greeting('javascript');
+
+// Named function
+var b= function xyz(){
+  console.log(xyz);    //inner call as well as
+};
+b();
+// xyz(); //this is not defined becouse locally defined
+
+// First function 
+const Geek= (a,b)=>{
+  console.log(a+''+b);
+};
