@@ -53,6 +53,9 @@ const calculate = function (radius, logic) {
   }
   return output;
 };
+
+console.log(radius.map(area));  //similar to calculate function
+
 console.log(calculate(radius, area));
-console.log(calculate(radius, Circumference));
-console.log(calculate(radius, diameter));
+// console.log(calculate(radius, Circumference));
+// console.log(calculate(radius, diameter));
