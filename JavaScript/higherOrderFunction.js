@@ -1,4 +1,4 @@
-const radius = [3,1,2,4];
+const radius = [3, 1, 2, 4];
 
 // calculate Area of circle
 
@@ -11,7 +11,7 @@ const radius = [3,1,2,4];
 // };
 // console.log(calculateArea(radius));
 
-// calculate area of Circumference 
+// calculate area of Circumference
 
 // const calculateCircumference = function(radius){
 //   output = [];
@@ -22,7 +22,7 @@ const radius = [3,1,2,4];
 // };
 // console.log(calculateCircumference(radius));
 
-// calculate circle of diameter 
+// calculate circle of diameter
 // const calculateDiameter = function(radius){
 //   const output = [];
 //   for(let i=0; i<radius.length; i++){
@@ -32,20 +32,27 @@ const radius = [3,1,2,4];
 // };
 // console.log(calculateDiameter(radius));
 
-// problem top code don't repeat yourself 
-// solve the problem using hof 
-const area = function(radius){
-  return Math.PI * radius[i] * radius[i];
+// problem top code don't repeat yourself
+// solve the problem using hof
+const area = function (radius) {
+  return Math.PI * radius * radius;
 };
 
-const calculate = function(radius, logic){
-   const output = [];
-  for(let i=0; i<radius.length; i++){
+const Circumference = function (radius) {
+  return 2 * Math.PI * radius;
+};
+
+const diameter = function (radius) {
+  return 2 * radius;
+};
+
+const calculate = function (radius, logic) {
+  const output = [];
+  for (let i = 0; i < radius.length; i++) {
     output.push(logic(radius[i]));
   }
   return output;
 };
 console.log(calculate(radius, area));
-
-
-
+console.log(calculate(radius, Circumference));
+console.log(calculate(radius, diameter));
