@@ -11,7 +11,8 @@ import './style.css';
 // import './JavaScript/mapFilterReduce';
 // import './JavaScript/destructuring';
 // import './JavaScript/function';
-import './JavaScript/higherOrderFunction';
+// import './JavaScript/higherOrderFunction';
+import './JavaScript/scopeChain&LexicalScope';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
