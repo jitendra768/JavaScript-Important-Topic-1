@@ -51,8 +51,25 @@
 // Remove multiple items from the end of an array
 // This example uses the splice() method to remove the last 3 items from the fruits array.
 
-const fruits = ['Apple', 'Banana', 'Cherry', 'Strawberry', 'Mango'];
-const start = -3;
-const removeItem = fruits.splice(start);
-console.log(fruits);
-console.log(removeItem);
+// const fruits = ['Apple', 'Banana', 'Cherry', 'Strawberry', 'Mango'];
+// const start = -3;
+// const removeItem = fruits.splice(start);
+// console.log(fruits);
+// console.log(removeItem);
+
+
+// Truncate an array down to just its first N items
+// This example uses the splice() method to truncate the fruits array down to just its first 2 items.
+
+// const fruits = ['Apple', 'Banana', 'Strawberry', 'Mango', 'Cherry'];
+// const start = 2;
+// const removedItems = fruits.splice(start);
+// console.log(fruits);
+// // ["Apple", "Banana"]
+// console.log(removedItems);
+// // ["Strawberry", "Mango", "Cherry"]
+
+
+// Remove the first item from an array
+// This example uses the shift() method to remove the first item from the fruits array.
+
