@@ -12,8 +12,8 @@ import './style.css';
 // import './JavaScript/destructuring';
 // import './JavaScript/function';
 // import './JavaScript/higherOrderFunction';
-// import './JavaScript/scopeChain&LexicalScope';
-import './JavaScript/Array';
+import './JavaScript/scopeChain&LexicalScope';
+// import './JavaScript/Array';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
