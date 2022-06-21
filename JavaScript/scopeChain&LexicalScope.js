@@ -21,17 +21,17 @@ console.log(result);
 
 const FullName = 'Shubham kumar';
 
-function details(){
-const FullName = 'Amit kumar';
+function details() {
+  const FullName = 'Amit kumar';
 
-  function name(){
-const FullName = 'Sachin shahani';
+  function name() {
+    const FullName = 'Sachin shahani';
 
-    function anotherName(){
+    function anotherName() {
       return FullName;
     }
-    anotherName();
+    return anotherName();
   }
-  name();
+  return name();
 }
 console.log(details());
