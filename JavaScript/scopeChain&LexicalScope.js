@@ -1,4 +1,4 @@
-// What exactly is Scope?
+//1 What exactly is Scope?
 
 // Define a variable in the global scope:
 const fullName = 'Oluwatobi Sofela';
@@ -16,3 +16,22 @@ function profile() {
 
 const result = profile();
 console.log(result);
+
+// if we have define three fullName
+
+const FullName = 'Shubham kumar';
+
+function details(){
+const FullName = 'Amit kumar';
+
+  function name(){
+const FullName = 'Sachin shahani';
+
+    function anotherName(){
+      return FullName;
+    }
+    anotherName();
+  }
+  name();
+}
+console.log(details());
