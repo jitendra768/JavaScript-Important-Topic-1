@@ -20,6 +20,29 @@
 
 // casse -2 if function outside of object then what to do
 
+// userDetails = {
+//   name: 'Amit Kumar',
+//   Age: 28,
+//   Designation: 'Software Engineer',
+// };
+
+// // outside function 
+// let printDetails = function () {
+//   console.log(this.name);
+// };
+
+// printDetails.call(userDetails);
+
+// userDetails2 = {
+//   name: 'Sachin Kumar',
+//   Age: 28,
+//   Designation: 'Software Engineer',
+// };
+
+// printDetails.call(userDetails2);
+
+// case 3- pass parameter usinng apply method
+
 userDetails = {
   name: 'Amit Kumar',
   Age: 28,
@@ -27,11 +50,11 @@ userDetails = {
 };
 
 // outside function 
-let printDetails = function () {
-  console.log(this.name);
+let printDetails = function (state,country) {
+  console.log(this.name+" "+ state+" "+country);
 };
 
-printDetails.call(userDetails);
+printDetails.call(userDetails,'Delhi','india');
 
 userDetails2 = {
   name: 'Sachin Kumar',
@@ -39,4 +62,13 @@ userDetails2 = {
   Designation: 'Software Engineer',
 };
 
-printDetails.call(userDetails2);
+// call 
+printDetails.call(userDetails2, 'Delhi','india');
+
+// apply
+printDetails.apply(userDetails2,["Delhi","India"]);
+
+// bind 
+let newfun = printDetails.bind(userDetails,'Delhi','india');
+// console.log(newfun);
+newfun();
