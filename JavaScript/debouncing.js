@@ -1,25 +1,16 @@
 let counter = 0;
 function getData() {
-  console.log('Hello User'+ counter++);
+  console.log('Hello User' + counter++);
 }
 
-
-
-function myDebounce(call,d){
+function myDebounce(call, d) {
   let timer;
-  return function(...args){
-    if(timer) clearTimeout(timer);
-    timer = setTimeout(()=>{
+  return function (...args) {
+    if (timer) clearTimeout(timer);
+    timer = setTimeout(() => {
       call();
-    },d)
-  }
+    }, d);
+  };
 }
 
-
-
-
-
-
-
-
-const bestFun = myDebounce(getData,1000);
+const bestFun = myDebounce(getData, 1000);
