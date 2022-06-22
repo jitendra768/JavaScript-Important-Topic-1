@@ -18,24 +18,22 @@
 
 // userDetails.printDetails.call(userDetails2);
 
-
 // casse -2 if function outside of object then what to do
 
 userDetails = {
-  name:'Amit Kumar',
-  Age:28,
+  name: 'Amit Kumar',
+  Age: 28,
   Designation: 'Software Engineer',
- 
-}
-let printDetails = function(){
-  console.log(this.name)
-}
-userDetails.printDetails();
+};
+let printDetails = function () {
+  console.log(this.name);
+};
+printDetails.call(userDetails);
 
 userDetails2 = {
-  name:'Sachin Kumar',
-  Age:28,
+  name: 'Sachin Kumar',
+  Age: 28,
   Designation: 'Software Engineer',
-}
+};
 
-userDetails.printDetails.call(userDetails2);
+printDetails.call(userDetails2);
