@@ -25,9 +25,12 @@ userDetails = {
   Age: 28,
   Designation: 'Software Engineer',
 };
+
+// outside function 
 let printDetails = function () {
   console.log(this.name);
 };
+
 printDetails.call(userDetails);
 
 userDetails2 = {
