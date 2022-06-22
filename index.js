@@ -14,7 +14,8 @@ import './style.css';
 // import './JavaScript/higherOrderFunction';
 // import './JavaScript/scopeChain&LexicalScope';
 // import './JavaScript/Array';
-import './JavaScript/throttling';
+// import './JavaScript/throttling';
+import './JavaScript/debouncing';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
