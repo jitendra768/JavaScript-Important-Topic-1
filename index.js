@@ -16,7 +16,8 @@ import './style.css';
 // import './JavaScript/Array';
 // import './JavaScript/throttling';
 // import './JavaScript/debouncing';
-import './JavaScript/callaaplybind';
+// import './JavaScript/callaaplybind';
+import './JavaScript/eventbublingcapturin';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
