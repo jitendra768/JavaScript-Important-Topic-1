@@ -42,4 +42,9 @@ function ReverseString(str) {
 }
  
 // Function call 
-console.log(ReverseString("Geeks for Geeks"));
+console.log(ReverseString("Namaste javascript"));
+
+// another example 
+const reversetring = str => [...str].reverse().join('');
+  
+console.log(reversetring("Geeks for Geeks"))
