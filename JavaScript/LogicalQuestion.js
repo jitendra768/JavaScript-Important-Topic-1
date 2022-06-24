@@ -59,4 +59,4 @@ function firstNonRepeatingCharacter(str) {
   }
   return "_";
 }
-firstNonRepeatingCharacter();
+console.log(firstNonRepeatingCharacter());
