@@ -29,8 +29,17 @@ for (let index in str) {
 // };
 
 //
-for(let i=0; i<10; i++){
-  setTimeout(()=>{
-    console.log(i)
-  },1000 * i)
+// for(let i=0; i<10; i++){
+//   setTimeout(()=>{
+//     console.log(i)
+//   },1000 * i)
+// }
+
+// Reverse a String in JavaScript
+
+function ReverseString(str) {
+  return str.split('').reverse().join('')
 }
+ 
+// Function call 
+console.log(ReverseString("Geeks for Geeks"));
