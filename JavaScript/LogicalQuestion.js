@@ -16,14 +16,21 @@ for (let index in str) {
     new_arr.push(str[index]);
   }
 }
-console.log(new_arr[0]);
+// console.log(new_arr[0]);
 
 
 // 2 Question if put var then given 10 as 10 time bcz var is globle Scope
 // you can fix with let 
 
+// for(let i=0; i<10; i++){
+//   setTimeout(()=>{
+//     console.log(i);
+//   },1000)
+// };
+
+//
 for(let i=0; i<10; i++){
   setTimeout(()=>{
-    console.log(i);
-  },1000)
-};
+    console.log(i)
+  },1000 * i)
+}
