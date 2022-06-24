@@ -28,7 +28,8 @@ for (let index in str) {
 //   },1000)
 // };
 
-//
+// every second print number
+
 // for(let i=0; i<10; i++){
 //   setTimeout(()=>{
 //     console.log(i)
