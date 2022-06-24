@@ -20,7 +20,7 @@ import './style.css';
 // import './JavaScript/eventbublingcapturin';
 // import './JavaScript/ShortMethod';
 // import './JavaScript/SetMapWeakSetWeakMap';
-import './JavaScript/SetTimeoutSetInterval';
+// import './JavaScript/SetTimeoutSetInterval';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
