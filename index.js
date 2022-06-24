@@ -5,7 +5,7 @@ import './style.css';
 // import './JavaScript/const';
 // import './JavaScript/important';
 // import './JavaScript/currying';
-// import './JavaScript/rest&Spread';
+import './JavaScript/rest&Spread';
 // import './JavaScript/hoisting';
 // import './JavaScript/closure';
 // import './JavaScript/mapFilterReduce';
