@@ -12,7 +12,7 @@ import './style.css';
 // import './JavaScript/destructuring';
 // import './JavaScript/function';
 // import './JavaScript/higherOrderFunction';
-import './JavaScript/scopeChain&LexicalScope';
+// import './JavaScript/scopeChain&LexicalScope';
 // import './JavaScript/Array';
 // import './JavaScript/throttling';
 // import './JavaScript/debouncing';
@@ -20,6 +20,7 @@ import './JavaScript/scopeChain&LexicalScope';
 // import './JavaScript/eventbublingcapturin';
 // import './JavaScript/ShortMethod';
 // import './JavaScript/SetMapWeakSetWeakMap';
+import './JavaScript/SetTimeoutSetInterval';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
