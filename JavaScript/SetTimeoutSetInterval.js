@@ -1,6 +1,6 @@
-setTimeout(() => {
-  alert('Hello,');
-}, 2000);
+// setTimeout(() => {
+//   alert('Hello,');
+// }, 2000);
 
 // setInterval(()=>{
 //     alert("hello")
