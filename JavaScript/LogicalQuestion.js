@@ -43,9 +43,20 @@ function ReverseString(str) {
 }
  
 // Function call 
-console.log(ReverseString("Namaste javascript"));
+// console.log(ReverseString("Namaste javascript"));
 
 // another example 
 const reversetring = str => [...str].reverse().join('');
   
-console.log(reversetring("Geeks for Geeks"))
+// console.log(reversetring("Geeks for Geeks"))
+str = 'abcdabcdh'
+function firstNonRepeatingCharacter(str) {
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (str.indexOf(char) == i && str.indexOf(char, i + 1) == -1) {
+      return char;
+    }
+  }
+  return "_";
+}
+firstNonRepeatingCharacter();
