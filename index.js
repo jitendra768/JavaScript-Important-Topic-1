@@ -17,7 +17,9 @@ import './style.css';
 // import './JavaScript/throttling';
 // import './JavaScript/debouncing';
 // import './JavaScript/callaaplybind';
-import './JavaScript/eventbublingcapturin';
+// import './JavaScript/eventbublingcapturin';
+// import './JavaScript/ShortMethod';
+import './JavaScript/SetMapWeakSetWeakMap';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
