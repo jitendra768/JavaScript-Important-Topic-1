@@ -59,27 +59,27 @@
 
 // also return a function
 
-// function x(){
-//   var a = 7;
-//   function y(){
-//       console.log(a);
-//   }
-// a = 100;   //given for confusion a interviewer  it will be hundred
-//   return y;
-// }
-// const z  = x();
-// console.log(z);
-// z();
-
-function z() {
-  var b = 20;
-  function x() {
-    var a = 3;
-    function y() {
-      console.log(b, a);
-    }
-    y();
+function x() {
+  var a = 7;
+  function y() {
+    console.log(a);
   }
-  x();
+  a = 100; //given for confusion a interviewer  it will be hundred
+  return y;
 }
+const z = x();
+console.log(z);
 z();
+
+// function z() {
+//   var b = 20;
+//   function x() {
+//     var a = 3;
+//     function y() {
+//       console.log(b, a);
+//     }
+//     y();
+//   }
+//   x();
+// }
+// z();
