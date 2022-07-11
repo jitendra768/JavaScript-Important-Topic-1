@@ -154,7 +154,7 @@ console.log(fruitsString);
 // Call a function on each element in an array
 // This example uses the forEach() method to call a function on each element in the fruits array; the function causes each item to be logged to the console, along with the item's index number.
 
-const fruits = ['Mango', 'Lemon', 'Orange', 'Apple'];
-fruits.forEach((item,index, array)=>{
-  console.log(index,item,array)
-})
+// const fruits = ['Mango', 'Lemon', 'Orange', 'Apple'];
+// fruits.forEach((item,index, array)=>{
+//   console.log(index,item,array)
+// })
