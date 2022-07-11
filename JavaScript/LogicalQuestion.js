@@ -16,11 +16,10 @@ for (let index in str) {
     new_arr.push(str[index]);
   }
 }
-// console.log(new_arr[0]);
-
+console.log(new_arr[0]);
 
 // 2 Question if put var then given 10 as 10 time bcz var is globle Scope
-// you can fix with let 
+// you can fix with let
 
 // for(let i=0; i<10; i++){
 //   setTimeout(()=>{
@@ -39,17 +38,18 @@ for (let index in str) {
 // Reverse a String in JavaScript
 
 function ReverseString(str) {
-  return str.split('').reverse().join('')
+  return str.split('').reverse().join('');
 }
- 
-// Function call 
+
+// Function call
 // console.log(ReverseString("Namaste javascript"));
 
-// another example 
-const reversetring = str => [...str].reverse().join('');
-  
+// another example
+const reversetring = (str) => [...str].reverse().join('');
+
 // console.log(reversetring("Geeks for Geeks"))
-str = 'abcdabcdh'
+
+str = 'abcdabcdh';
 function firstNonRepeatingCharacter(str) {
   for (let i = 0; i < str.length; i++) {
     let char = str[i];
@@ -57,6 +57,6 @@ function firstNonRepeatingCharacter(str) {
       return char;
     }
   }
-  return "_";
+  return '_';
 }
-console.log(firstNonRepeatingCharacter());
+// console.log(firstNonRepeatingCharacter());
