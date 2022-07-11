@@ -18,9 +18,9 @@
 
 // This example uses the join() method to create a string from the fruits array.
 
-// const fruits = ['Apple', 'Banana'];
-// const fruitsString = fruits.join(',');
-// console.log(fruitsString);
+const fruits = ['Apple', 'Banana'];
+const fruitsString = fruits.join(',');
+console.log(fruitsString);
 
 // This example uses the indexOf() method to find the position (index) of the string "Banana" in the fruits array.
 
