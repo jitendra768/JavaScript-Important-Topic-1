@@ -12,6 +12,7 @@ const urlsobj = {
   development: 'dev.example.com',
   production: 'prod.example.com',
 };
+
 // console.log(urlsobj);
 // console.log(urlsobj.development);
 
